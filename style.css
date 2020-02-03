@@ -98,7 +98,21 @@ textarea:focus {
     text-align: center;
     font-family: 'Poppins';
   
-   
+}
+
+@media (max-width: 700px) {
+    .parent-container {
+        width: 14em;
+        height: 24em;
+    }
+    .output-field {
+        width: 80%;
+    }
+
+    button {
+        width: 2em;
+        height: 2em;
+    }
 }
 
 
