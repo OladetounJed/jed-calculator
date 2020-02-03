@@ -1,0 +1,105 @@
+body {
+    background-color: black;
+}
+.parent-container {
+    display: block;
+    margin: auto;
+    width: 21em;
+    height: 29em;
+    background-color: black;
+    border-radius: 1em;
+    margin-top: 4em;
+    background-color: rgb(253, 247, 247);
+    box-shadow: 0 10px 50px rgb(185, 174, 174);
+   
+    
+}
+
+button {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    border: none;
+    background-color:  rgb(255, 255, 255);
+    box-shadow: 0 5px 20px rgb(231, 196, 196);
+    color: rgb(0, 0, 0, 0.5);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.mode-container {
+    padding: 1em;
+}
+.mode-container button {
+    width: 1em;
+    height: 1em;
+}
+
+.output-field {
+    width: 90%;
+    display: block;
+    margin: auto;
+    height: 3.5em;
+    margin-bottom: 1.8em;
+    border-width: 0.3em;
+    background-color: transparent;
+    border-color: rgb(0, 0, 0, 0.6);
+    resize: none;
+}
+
+.cal-btn {
+    margin: 1.5em 0 0 1em;
+}
+
+.last-col-btn {
+    margin-left: 3em;
+}
+
+.operation {
+    background-color: rgb(231, 114, 114);
+    color: rgb(0, 0, 0);
+ 
+}
+
+.clear-btn, .equal {
+    background-color: rgb(78, 2, 2);
+    color: white;
+}
+
+
+.light-mode {
+    background-color: rgb(221, 212, 212);
+}
+
+.dark-mode {
+    background-color: rgb(46, 44, 44);
+}
+
+.green-mode {
+    background-color: rgb(13, 187, 13);
+}
+
+
+button:focus {
+    outline: none;
+    
+}
+
+textarea:focus {
+    outline: none;
+  
+}
+
+.signature {
+    color: rgb(255, 255, 255, 0.4);
+    position: absolute;
+    bottom: 2%;
+    right: 3%;
+    text-align: center;
+    font-family: 'Poppins';
+  
+   
+}
+
+
+
