@@ -102,16 +102,21 @@ textarea:focus {
 
 @media (max-width: 700px) {
     .parent-container {
-        width: 14em;
-        height: 24em;
+        width: 17em;
+        height: 26em;
     }
     .output-field {
-        width: 80%;
+        width: 90%;
+        height: 2.5em;
     }
 
     button {
-        width: 2em;
-        height: 2em;
+        width: 3em;
+        height: 3em;
+    }
+    
+    .signature {
+        font-size: 0.6em;
     }
 }
 
