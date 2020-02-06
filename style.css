@@ -100,7 +100,7 @@ textarea:focus {
 }
 
 .signature {
-    color: rgb(255, 255, 255, 0.4);
+    color: #ffffff66;
     position: absolute;
     bottom: 2%;
     right: 3%;
@@ -126,6 +126,7 @@ textarea:focus {
     
     .signature {
         font-size: 0.6em;
+        
     }
 }
 

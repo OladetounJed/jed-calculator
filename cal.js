@@ -3,14 +3,15 @@ let darkMode = document.querySelector('.dark-mode');
 let greenMode = document.querySelector('.green-mode');
 let parentContainer = document.querySelector('.parent-container')
 let keys = document.querySelector('.operation-operand-container')
-let display = document.querySelector('.output-field')
+let display = document.querySelector('.output-field');
+let signature = document.querySelector('.signature')
 
 
 lightMode.addEventListener('click', function(){
     document.body.style.backgroundColor = 'white';
     parentContainer.style.backgroundColor = 'black';
     display.style.backgroundColor = 'white';
-    darkMode.style.backgroundColor = ''
+    signature.style.color = '#00000066';
 
     
 });
@@ -19,6 +20,7 @@ darkMode.addEventListener('click', function(){
     document.body.style.backgroundColor = 'black';
     parentContainer.style.backgroundColor = '#fdf7f7';
     display.style.backgroundColor = 'transparent';
+    signature.style.color = '#ffffff66';
     
 
     
@@ -28,6 +30,7 @@ greenMode.addEventListener('click', function(){
     document.body.style.backgroundColor = 'green';
     parentContainer.style.backgroundColor = '#fdf7f7';
     display.style.backgroundColor = 'transparent';
+    signature.style.color = '#ffffff66';
     
 
     
@@ -42,14 +45,20 @@ display.value = buffer;
 
 
 parentContainer.addEventListener('click', function(event){
+    const {target} = event;
+     if (!target.matches('button')) {
+        return;
+    }
+        else{
     buttonClick(event.target.value)
+        }
 
 });
 
 function buttonClick(value){
     if(isNaN(parseInt(value))){
         handleSymbol(value);
-    }else{
+    }else if(parseInt(value)){
         handleNumber(value);
     }
   
@@ -127,7 +136,7 @@ function flushOperation(intBuffer){
     else if(previousOperator === '/') {
         runningTotal /= intBuffer;
     }
-    console.log(previousOperator)
+  
 }
 
 
