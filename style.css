@@ -9,8 +9,8 @@ body {
     background-color: black;
     border-radius: 1em;
     margin-top: 4em;
-    background-color: rgb(253, 247, 247);
-    box-shadow: 0 10px 50px rgb(185, 174, 174);
+    background-color: #fdf7f7;
+    box-shadow: 0 20px 50px rgb(185, 174, 174);
    
     
 }
@@ -39,12 +39,17 @@ button {
     width: 90%;
     display: block;
     margin: auto;
-    height: 3.5em;
-    margin-bottom: 1.8em;
-    border-width: 0.3em;
+    height: 2.5em;
+    margin-bottom: 1em;
+    border-width: 0.2em;
     background-color: transparent;
-    border-color: rgb(0, 0, 0, 0.6);
+    border-color: rgb(0, 0, 0);
     resize: none;
+    text-align: right;
+    font-size: 1.2rem;
+    font-family: 'Poppins';
+    font-weight: bold;
+    padding-right: 0.4em;
 }
 
 .cal-btn {
@@ -68,11 +73,11 @@ button {
 
 
 .light-mode {
-    background-color: rgb(221, 212, 212);
+    background-color: #ddd4d4;
 }
 
 .dark-mode {
-    background-color: rgb(46, 44, 44);
+    background-color: rgb(63, 61, 61);
 }
 
 .green-mode {
@@ -83,6 +88,10 @@ button {
 button:focus {
     outline: none;
     
+}
+
+button:hover {
+    box-shadow: 0 5px 20px rgb(228, 58, 58); 
 }
 
 textarea:focus {
@@ -102,7 +111,7 @@ textarea:focus {
 
 @media (max-width: 700px) {
     .parent-container {
-        width: 17em;
+        width: 80%;
         height: 26em;
     }
     .output-field {
